@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <title>Conclucion</title>
+
+    </head>
+    <body>
+     <style>
+        .titulo{
+            font-size: 100px;
+         text-align: left;
+        }
+        .info{
+            font-size: 35px;
+            text-align: left;
+        }
+        .foto{
+            width: 800px;
+            height: 500px;
+            
+        
+        }
+        .titulo1{
+            font-size: 35px;
+         text-align: left;
+        }
+    
+        .titulo2{
+            font-size: 35px;
+         text-align: left;
+        }
+        .foto1{
+            width: 800px;
+            height: 500px;
+            margin:2.5%;
+        }
+        .qs{
+            font-size: 35px;
+         text-align: left; 
+        }
+        
+     </style>   
+
+<p class="titulo"> Conclucion</p>
+
+<br>
+<br>
+<h3 class="qs"> En resumen:
+   
+<p class="titulo2"> <br><br>
+    La sustentabilidad se refiere a la capacidad de satisfacer las necesidades presentes sin comprometer la capacidad de las futuras generaciones para satisfacer sus propias necesidades. Se centra en encontrar un equilibrio entre el desarrollo económico, social y ambiental, asegurando que los recursos naturales se utilicen de manera responsable y que se minimice el impacto negativo en el medio ambiente. <br><br>
+
+    Algunos aspectos clave de la sustentabilidad incluyen la conservación de recursos naturales como el agua, la energía y los bosques, la reducción de la contaminación y las emisiones de gases de efecto invernadero, la promoción de prácticas comerciales justas y éticas, y la inclusión social y económica de todas las personas. <br><br>
+
+Sustentabilidad a Nivel Mundial
+
+La sustentabilidad a nivel mundial es crucial para garantizar un futuro próspero y equitativo para las generaciones presentes y futuras. En resumen, la sustentabilidad es fundamental para garantizar un futuro próspero y equitativo para todas las personas y el planeta en su conjunto, y requiere un enfoque integral y colaborativo en todos los niveles de la sociedad. <br><br>
+
+El medio ambiente es un concepto amplio que abarca todos los elementos naturales, físicos, químicos, biológicos y sociales que interactúan en un entorno específico. Incluye los ecosistemas terrestres, acuáticos y atmosféricos, así como los seres vivos que los habitan. Este entorno proporciona los recursos naturales necesarios para la vida, como el aire limpio, el agua potable, los alimentos y los materiales para la construcción. Además, el medio ambiente influye en el clima, el clima afecta a los patrones climáticos, que a su vez tienen un impacto en la distribución de las plantas y animales, y en la forma en que los seres humanos interactúan con su entorno. La actividad humana, como la industrialización, la urbanización y la agricultura intensiva, ha alterado significativamente el medio ambiente, provocando la contaminación del aire y del agua, la pérdida de biodiversidad, la degradación del suelo y el cambio climático. La conservación y protección del medio ambiente son fundamentales para garantizar un futuro sostenible para las generaciones futuras. Esto implica adoptar prácticas de desarrollo y consumo responsables, promover la conservación de los recursos naturales, reducir la contaminación y mitigar el cambio climático. <br><br>
+Por que cuidar el planeta? <br><br>
+
+Cuidar el planeta es fundamental por varias razones, entre las que se incluyen la preservación de la biodiversidad, la protección de los recursos naturales, la mitigación del cambio climático y la garantía de un futuro sostenible para las generaciones venideras. <br><br>
+   </p>
+   
+  
+
+    <p class="info">  </p>
+
+    
+
+    <p class="titulo1"> </p>
+
+
+<br><br>
+    <a class="btn btn-primary btn-lg" href="Tqm3.html" role="button"> Atras</a> <br> <br>
+
+   <h3>Para ir al indice, click aqui:</h3>
+<a href=" file:///F:/lndg.pages/paginas%20web/indice.html">INDICE </a>
+    <br>
+
+    <form action="#" method="post">
+        <h2>Encuesta de Satisfacción</h2>
+        <p>¿Te resultó útil la información proporcionada?</p>
+        <label>
+            <input type="radio" name="satisfaccion" value="si" required> Sí
+        </label>
+        <label>
+            <input type="radio" name="satisfaccion" value="no"> No
+        </label>
+        <input type="submit" value="Enviar">
+        <!-- Mensaje positivo -->
+        <p id="mensaje_positivo" style="display: none; color: green;">¡Nos alegra que te haya sido útil la información!</p>
+        <!-- Mensaje negativo -->
+        <p id="mensaje_negativo" style="display: none; color: red;">Lamentamos que la información no haya sido útil.</p>
+    </form>
+    <script>
+        // Función para mostrar el mensaje positivo o negativo según la opción seleccionada
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var satisfaccion = document.querySelector('input[name="satisfaccion"]:checked').value;
+            if (satisfaccion === 'si') {
+                document.getElementById('mensaje_positivo').style.display = 'block';
+                document.getElementById('mensaje_negativo').style.display = 'none';
+            } else {
+                document.getElementById('mensaje_positivo').style.display = 'none';
+                document.getElementById('mensaje_negativo').style.display = 'block';
+            }
+        });
+        
+    </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    </body>
+    </html>

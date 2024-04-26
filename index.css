@@ -1,0 +1,24 @@
+.resolucion{
+    width: 99%;
+    text-align: center;
+}
+/**movil**/
+@media(max-width:767px) {}
+.pc{
+display: none;
+
+}
+.movil{
+
+display: none;
+}
+/**escritorio**/
+@media(max-width:991px) {}
+.pc{
+
+display: none;
+}
+.movil{
+
+   display: none; 
+}

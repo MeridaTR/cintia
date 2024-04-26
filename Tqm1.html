@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <!--JQuery -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+          <!--Titulo de la pagina-->
+        <title>Sustentabilidad</title>
+
+    </head>
+    <body>
+     <style>
+        .titulo{
+            font-size: 50px;
+         text-align: left;
+        }
+        .info{
+            font-size: 35px;
+            text-align: left;
+        }
+        .foto{
+            width: 800px;
+            height: 500px;
+            margin:2.5%;
+        }
+        .titulo1{
+            font-size: 35px;
+         text-align: left;
+        }
+    
+        .titulo2{
+            font-size: 35px;
+         text-align: left;
+        }
+        .foto1{
+            width: 800px;
+            height: 500px;
+            margin:2.5%;
+        }
+        .info1{
+            font-size: 35px;
+            text-align: left;
+        }
+        
+     </style>   
+<p class="titulo">Sustentabilidad a Nivel Mundial </p>
+
+<h3>Para ir al final de la pagina :</h3>
+<a href="#int">Click Aqui</a>
+  <!--Vinculo Interno -->
+<br>
+<br>
+
+<p class="info1">La sustentabilidad a nivel mundial es crucial para garantizar un futuro próspero y equitativo para las generaciones presentes y futuras. Implica equilibrar las necesidades económicas, sociales y ambientales para preservar los recursos naturales y mejorar la calidad de vida de todos los seres humanos sin comprometer el bienestar de las futuras generaciones. Esto implica tomar medidas en áreas como la conservación de la biodiversidad, la reducción de emisiones de gases de efecto invernadero, la promoción de energías renovables, la gestión sostenible de los recursos naturales y el fomento de la equidad social y económica <br><br></p>
+
+<img src="sust3.jpg" class="foto" align="rigth">
+
+<p class="info"> En resumen, la sustentabilidad es fundamental para garantizar un futuro próspero y equitativo para todas las personas y el planeta en su conjunto, y requiere un enfoque integral y colaborativo en todos los niveles de la sociedad.  <br><br>  </p>
+    
+
+   
+
+<p class="titulo1">
+  
+    
+   </p>
+
+    <h1>Ejemplos De Practicas Sustentables</h1>
+
+<p class="titulo2">Aqui algunos ejemplos de prácticas sustentables:
+
+    1. Energía renovable: Usar fuentes de energía como la solar, eólica o hidroeléctrica en lugar de combustibles fósiles para reducir las emisiones de carbono. <br><br>
+    2. Agricultura orgánica: Cultivar alimentos sin el uso de pesticidas y fertilizantes químicos para proteger la salud del suelo y el medio ambiente. <br><br>
+    3. Transporte público y vehículos eléctricos: Optar por el transporte público o vehículos eléctricos en lugar de automóviles con motor de combustión interna para disminuir la contaminación del aire. <br><br>
+    4. Reciclaje y reutilización: Separar los materiales reciclables y reutilizar productos en lugar de desecharlos para reducir la cantidad de residuos enviados a los vertederos. <br><br>
+    5. Construcción sostenible: Utilizar materiales de construcción ecológicos y diseñar edificaciones que sean energéticamente eficientes para reducir el impacto ambiental. <br><br>
+    6. Conservación de recursos naturales: Proteger y preservar los recursos naturales como los bosques, los cuerpos de agua y la biodiversidad para mantener el equilibrio ecológico. <br><br>
+    7. Consumo responsable: Optar por productos locales, de temporada y con menos envases para reducir la huella de carbono y el desperdicio de recursos. <br><br>
+    8. Educación y concientización: Informar y educar a la comunidad sobre la importancia de la sustentabilidad y promover cambios de comportamiento para lograr un futuro más sostenible. <br><br><br></p>
+    <!--Hasta aqui informacion -->
+
+<h3>Para mas informacion, visita:</h3>
+<a href="https://www.significados.com/desarrollo-sustentable/"> https://www.significados.com/desarrollo-sustentable/</a>
+  <!--Vinculo externo -->
+<br><br>
+    <a class="btn btn-primary btn-lg" href="Tqm.html" role="button"> Atras</a>
+    <a class="btn btn-primary btn-lg" href="tqm2.html" role="button"> Adelante</a>
+    <h2 id="int">...</h2>
+  <!--Botones de siguiente pagina y atras pagina -->
+    <form action="#" method="post">
+        <h2>Encuesta de Satisfacción</h2>
+        <p>¿Te resultó útil la información proporcionada?</p>
+        <label>
+            <input type="radio" name="satisfaccion" value="si" required> Sí
+        </label>
+        <label>
+            <input type="radio" name="satisfaccion" value="no"> No
+        </label>
+        <input type="submit" value="Enviar">
+        <!-- Mensaje positivo -->
+        <p id="mensaje_positivo" style="display: none; color: green;">¡Nos alegra que te haya sido útil la información!</p>
+        <!-- Mensaje negativo -->
+        <p id="mensaje_negativo" style="display: none; color: red;">Lamentamos que la información no haya sido útil.</p>
+    </form>
+    <script>
+        // Función para mostrar el mensaje positivo o negativo según la opción seleccionada
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var satisfaccion = document.querySelector('input[name="satisfaccion"]:checked').value;
+            if (satisfaccion === 'si') {
+                document.getElementById('mensaje_positivo').style.display = 'block';
+                document.getElementById('mensaje_negativo').style.display = 'none';
+            } else {
+                document.getElementById('mensaje_positivo').style.display = 'none';
+                document.getElementById('mensaje_negativo').style.display = 'block';
+            }
+        });
+        
+    </script>
+      <!--Funcion de formulario -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    </body>
+    </html>
